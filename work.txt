@@ -1,0 +1,30 @@
+Essential:
+----------
+- OBS Studio
+	- press settings (second button from right bottom, or from the menu), select Output (third from above) page, and then you can change what kind of Encoder you want to use for both Streaming and Recording. Switch both from NVENC to Software.
+- Google Chrome
+	- Adblocker
+- Adobe Acrobat DC
+- Microsoft Office
+- Visual Studio
+	- https://visualstudio.microsoft.com/
+- Visual Studio Code
+	- https://visualstudio.microsoft.com/
+- Microsoft SQL Server Management Studio
+	-  https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15
+- Notepad++
+	- Obsidian theme
+- Screensaver disabler 
+	- https://github.com/pedrolcl/screensaver-disabler
+- node.js
+	- https://nodejs.org/en/
+- git
+- Windows
+	- Combine tasbar buttons: never
+
+
+Optional:
+---------
+- NetBeans
+- VMWare
+- Skype
