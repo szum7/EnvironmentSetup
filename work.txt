@@ -1,22 +1,41 @@
 Version 0.0.1
-OS: Windows
+OS: Windows 11
 
 Essential:
 ----------
 - OBS Studio
-	- press settings (second button from right bottom, or from the menu), select Output (third from above) page, and then you can change what kind of Encoder you want to use for both Streaming and Recording. Switch both from NVENC to Software.
+	- Settings/Output/[set Recording from NVENC to software]
+	- Settings/Output/[set Streaming from NVENC to software]
+	- Add display capture
+	- Mute microphone
 - Google Chrome
 	- Adblocker
+	- Pin to taskbar
+	- (Turn off save passwords) Current user (top-right corner profile pic)/Passwords/[UNCHECK Auto Offer to save passwords]
+	- (Turn off save passwords) Current user/Passwords/[UNCHECK Auto Sign-in]
+	- (Last windows on startup) Settings/On startup/[CHECK Continue where you left off]
+	- (Import bookmarks) Bookmarks/Bookmark manager/(top right)Import bookmarks
+- Bitwarden
 - Adobe Acrobat DC
-- Microsoft Office
+	- (Get it from the windows store) apps.microsoft.com/store/detail/adobe-acrobat-reader-dc/XPDP273C0XHQH2
+- Microsoft Teams for business
+- Microsoft Outlook
+	- Open and login
+	- Pin to taskbar
 - Visual Studio
 	- https://visualstudio.microsoft.com/
+	- Options/Projects and Solutions/General/Track Active Item in Solution Explorer = true
+	- Add or Remove Buttons... (Top toolbar far right down arrow)/Commands/Add Command.../Edit/Toggle Word Wrap -> OK and place somewhere
+	- Cog icon next to opened files tabs/Options/Pinned tabs/Show pinned tabs in a separate row = true
 - Visual Studio Code
 	- https://visualstudio.microsoft.com/
 - Microsoft SQL Server Management Studio
 	-  https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15
 - Notepad++
 	- Obsidian theme
+	- Settings/Preferences.../Auto-completion/[untick all checkboxes]
+	- Settings/General Tab-bar/Multi-line/[Check]
+	- Pin to taskbar
 - Screensaver disabler 
 	- https://github.com/pedrolcl/screensaver-disabler
 - node.js
@@ -24,10 +43,31 @@ Essential:
 - git
 - Windows
 	- Combine tasbar buttons: never
+	- (Hungarian keyboard) Time & language/Language & region/Add language
+	- (Set Chrome as default) Apps/Default apps/Google Chrome/[Set default]
+- File structure
+	- Documents/Aron
+- Source Tree
+- Taskbar pinned app order
+	- Task Manager
+	- Notepad++
+	- Files
+	- Outlook
+	- Chrome
+	- MS Teams
+	- Paint
+	- Visual Studio
+	- Visual Studio Code
+	- Command Prompt
+	- Source Tree
+	- OBS Studio
 
 
 Optional:
 ---------
+- Java SDK
 - NetBeans
+- Xampp
 - VMWare
 - Skype
+- Mozilla Firefox
