@@ -1,0 +1,89 @@
+Version 0.0.1
+OS: Windows 10
+
+Essential:
+----------
+- Windows
+	- Combine tasbar buttons: never
+	- (Hungarian keyboard) Time & language/Language & region/Add language
+	- (Set Chrome as default) Apps/Default apps/Google Chrome/[Set default]
+	- (Fix USB disconnect issues) Control Panel/Power Options/Change plan settings/Change advanced power settings :: Advanced settings/USB settings/USB selective suspend setting/Setting: Disabled
+- USBView
+	- Download https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/ > Unselect checkboxes in installer except: Debugging Tools for Windows > Install > run the exe in C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\USBView.exe
+- OBS Studio
+	- Settings/Output/[set Recording from NVENC to software]
+	- Settings/Output/[set Streaming from NVENC to software]
+	- Add display capture
+	- Mute microphone
+- Google Chrome
+	- Adblocker
+	- Pin to taskbar
+	- (Turn off save passwords) Current user (top-right corner profile pic)/Passwords/[UNCHECK Auto Offer to save passwords]
+	- (Turn off save passwords) Current user/Passwords/[UNCHECK Auto Sign-in]
+	- (Last windows on startup) Settings/On startup/[CHECK Continue where you left off]
+	- (Import bookmarks) Bookmarks/Bookmark manager/(top right)Import bookmarks
+- Bitwarden
+- Adobe Acrobat DC
+	- (Get it from the windows store) apps.microsoft.com/store/detail/adobe-acrobat-reader-dc/XPDP273C0XHQH2
+- Visual Studio
+	- https://visualstudio.microsoft.com/
+	- Options/Projects and Solutions/General/Track Active Item in Solution Explorer = true
+	- Add or Remove Buttons... (Top toolbar far right down arrow)/Commands/Add Command.../Edit/Toggle Word Wrap -> OK and place somewhere
+	- Cog icon next to opened files tabs/Options/Pinned tabs/Show pinned tabs in a separate row = true
+- Visual Studio Code
+	- https://visualstudio.microsoft.com/
+- Microsoft SQL Server Management Studio
+	-  https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15
+- Notepad++
+	- Obsidian theme
+	- Settings/Preferences.../Auto-completion/[untick all checkboxes]
+	- Settings/General Tab-bar/Multi-line/[Check]
+	- Pin to taskbar
+- node.js
+	- https://nodejs.org/en/
+- git
+- Taskbar pinned app order
+	- Task Manager
+	- Notepad++
+	- Files
+	- Chrome
+	- Paint
+	- Visual Studio
+	- Visual Studio Code
+	- Command Prompt
+
+
+Optional:
+---------
+- Java SDK
+- NetBeans
+- Xampp
+- VMWare
+- Skype
+- Mozilla Firefox
+- Source Tree
+
+
+Useful:
+-------
+(Fix USB disconnect issues - all options)
+Assuming you have set your power profile to high (Windows) with nothing suspending.
+
+Best advice I can offer is to clean house on your USB devices. Unplug everything but your keyboard / mouse and then run something like USBView to take a look at what is still hanging around. Delete everything except your keyboard and mouse.
+Reboot your system, go to Device Manager and look at Devices By Type and then USB. Pay attention to the the various hubs and make sure the "Allow Computer To Power Down Device, or whatever it's called, is UNCHECKED.
+
+Now, take a look at your motherboard manual and try to isolate your audio interface on it's own USB controller. Keep checking Device Manager and USBView as you plug in devices to see where they are being assigned. Your manual should list the physical ports, where you actually plug the cable in, and what controllers they are attached to.
+Again, the object is to isolate your audio interface on it's own controller.
+If that is not possible, then put it on a controller with a low impact device like an iLok or Steinberg key etc.
+
+
+With some experimentation and a careful read of the manual, you should be able to design a great setup.
+
+I agree this should all just work, but sometimes it doesn't and this procedure will at least give you a fighting chance.
+
+Oh yea, with some systems and configurations, you can plug anything into any socket and it will just work.
+When it doesn't, you need to dig deeper.
+
+Best of luck !
+
+P.S. Make sure to check the "Allow Power Down" status of the hubs after every Microsoft Windows update because Windows seems to like to reset this parameter.
