@@ -36,6 +36,7 @@ Essential:
 	- Settings/Preferences.../Auto-completion/[untick all checkboxes]
 	- Settings/General Tab-bar/Multi-line/[Check]
 	- Pin to taskbar
+	- Plugins/Plugin admin... -> install LuaScript -> Plugins/LuaScript/Show console -> (in console) editor.MarginLeft = 10
 - Screensaver disabler 
 	- https://github.com/pedrolcl/screensaver-disabler
 - node.js

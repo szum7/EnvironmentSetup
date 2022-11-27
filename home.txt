@@ -3,6 +3,14 @@ OS: Windows 10
 
 Essential:
 ----------
+- Notepad++
+	- Obsidian theme
+	- Settings/Preferences.../Auto-completion/[untick all checkboxes]
+	- Settings/General Tab-bar/Multi-line/[Check]
+	- Pin to taskbar
+	- Plugins/Plugin admin... -> install LuaScript -> Plugins/LuaScript/Show console -> (in console) editor.MarginLeft = 10
+- Total Commander
+- WinRAR
 - Windows
 	- Combine tasbar buttons: never
 	- (Hungarian keyboard) Time & language/Language & region/Add language
@@ -22,7 +30,7 @@ Essential:
 	- (Turn off save passwords) Current user/Passwords/[UNCHECK Auto Sign-in]
 	- (Last windows on startup) Settings/On startup/[CHECK Continue where you left off]
 	- (Import bookmarks) Bookmarks/Bookmark manager/(top right)Import bookmarks
-- Bitwarden
+- Chrome/Bitwarden
 - Adobe Acrobat DC
 	- (Get it from the windows store) apps.microsoft.com/store/detail/adobe-acrobat-reader-dc/XPDP273C0XHQH2
 - Visual Studio
@@ -34,34 +42,91 @@ Essential:
 	- https://visualstudio.microsoft.com/
 - Microsoft SQL Server Management Studio
 	-  https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15
-- Notepad++
-	- Obsidian theme
-	- Settings/Preferences.../Auto-completion/[untick all checkboxes]
-	- Settings/General Tab-bar/Multi-line/[Check]
-	- Pin to taskbar
 - node.js
 	- https://nodejs.org/en/
-- git
-- Taskbar pinned app order
-	- Task Manager
-	- Notepad++
-	- Files
-	- Chrome
-	- Paint
-	- Visual Studio
-	- Visual Studio Code
-	- Command Prompt
+- Git
+- Microsoft Office Professional Plus 2010
+- DEAMON Tools Lite
+- Docker, Docker Desktop
+- EOS 80D softwares
+	- Digital Photo Professional 4
+	- EOS Utility
+	- Picture Style Editor
+- Canon/Digital Photo Professional 4
+- Adobe Photoshop CC 2019
+- Adobe InDesign CC 2019
+- Adobe Lightroom Classic CC
+- Adobe After Effects CC 2015
+- Adobe Premiere Pro CC 2015
+- MuseScore 3
+- PuTTY
+- Tablet driver (?)
+- Unity Hub
+- Unity
+- Media Player Classic (MPC-HC x64)
+- VLC player
+- Mozilla Firefox
+- Source Tree
+- Java SDK/JDK
+- NetBeans
+- Xampp
+- VMware Workstation 15 Player
+- Audacity
+- EPSON Software (printer driver (?))
+- OpenOffice 4
+- qBittorrent
+- Guitar Pro 7
+- OpenHardwareMonitor
+- Discord
+- Aseprite
+- Tablet driver (?)
 
 
 Optional:
 ---------
-- Java SDK
-- NetBeans
-- Xampp
-- VMWare
 - Skype
-- Mozilla Firefox
-- Source Tree
+- TeamViewer
+- Calibre - E-book management
+- GeForce Experience
+- Zoom
+
+
+Maybe:
+(software i don't really use, but may be useful to know about)
+------
+- Melodics
+- LogMeIn Hamachi
+- GraphicsGale
+- JoyToKey
+- BL2SaveEditor
+- Toontrack solo
+- Superior Drummer 2
+- InstantEyedropper
+- LINQPad 5 (or newer)
+- EasyBCD (for bootable pendrives for OS installs)
+- Windows Grep
+- WinSCP (Total commander like)
+
+
+Fun:
+----
+- Cheat Engine 7.1
+- EA Desktop
+- Steam
+
+
+Taskbar pinned app order
+------------------------
+- Task Manager
+- Notepad++
+- Chrome
+- Files
+- Paint
+- Visual Studio
+- Visual Studio Code
+- Command Prompt
+- Paint
+- Guitar Pro
 
 
 Useful:
