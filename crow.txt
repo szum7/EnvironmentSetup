@@ -1,19 +1,10 @@
 Version 1.0
 OS: Windows 10
 
-12:27 - 9h 4m
-12:44 - 10h 1m
-12:53 - 10h 0m
-
-Legend:
--------
-d: download
-t: torrent
-i: install
--: to do
-~: not a must
-o: done
-x: not doing it
+hyper-v
+device/credential guard enabled
+install windows hypervisor platform (WHP)
+deactivate UAC with msconfig
 
 Essential:
 ----------
@@ -22,6 +13,8 @@ o access Internet
 o Activate Windows
 o Windows Updates
 o Set timezone/time
+o d + i AMD Ryzen driver
+	Go to https://www.amd.com/en/support > Select Processors with graphics/AMD Ryzen Processors/AMD Ryzen™ 7 Mobile Processors with Radeon™ Graphics/AMD Ryzen™ 7 6800H​ > Submit > download Adrenalin 22.11.2 Recommended (WHQL), Release Date: 12/8/2022
 o d Google Chrome
 - i Google Chrome
 	o i Adblocker Plus
@@ -52,46 +45,58 @@ o d node.js
 	https://nodejs.org/en/
 o d Git
 o d DEAMON Tools Lite
-- d Docker, Docker Desktop
-- d MuseScore 3
-- d PuTTY
+o d Docker, Docker Desktop
+o d Canon EOS 80D Utility bundle
+	https://www.canon.hu/support/consumer_products/products/cameras/digital_slr/eos-80d.html
+o d MuseScore 3
+o d PuTTY
 - d Tablet driver (?)
-- d Unity Hub
-- d Unity
-- d Media Player Classic (MPC-HC x64)
-- d VLC player
-- d Source Tree
-- d Java SDK/JDK
-- d NetBeans
-- d Xampp
-- d VMware Workstation 15 Player
-- d Audacity
-- d OpenOffice 4
+o d Unity Hub + newest Unity version
+o d Media Player Classic (MPC-HC x64)
+o d VLC player
+o d Source Tree
+o d Java JDK
+o d NetBeans
+o d Xampp
+o d VMware Workstation 15 Player
+o d Audacity
+o d OpenOffice 4
 - d OpenHardwareMonitor
-- d Discord
+o d Discord
+o d Microsoft Teams
 
-- t Guitar Pro 7
-- t Microsoft Office Professional Plus 2010
-- t Adobe Photoshop CC 2019
-- t Adobe InDesign CC 2019
-- t Adobe Lightroom Classic CC
-- t Adobe After Effects CC 2015
-- t Adobe Premiere Pro CC 2015
-- t Aseprite
+o t Guitar Pro 7
+o t Microsoft Office Professional Plus 2010
+o t Adobe Photoshop CC 2019
+o t Adobe InDesign CC 2019
+o t Adobe Lightroom Classic CC
+o t Adobe After Effects CC 2015
+o t Adobe Premiere Pro CC 2015
+o t Aseprite
 
 - Windows
-	- Combine tasbar buttons: never
-	- (Hungarian keyboard) Time & language/Language & region/Add language
-	- (Set Chrome as default) Apps/Default apps/Google Chrome/[Set default]
-	- (Fix USB disconnect issues) Control Panel/Power Options/Change plan settings/Change advanced power settings :: Advanced settings/USB settings/USB selective suspend setting/Setting: Disabled
-	- Turn off unecessary windows virus and thread protections... todo how exactly?
-	
-- i Notepad++
+	o Combine tasbar buttons: never
+	x (Hungarian keyboard) Time & language/Language & region/Add language => wasn't needed
+	o Change Date and time > ...set time formats as you like
+	o (Set Chrome as default) Apps/Default apps/Google Chrome/[Set default]
+	x (Fix USB disconnect issues) Control Panel/Power Options/Change plan settings/Change advanced power settings :: Advanced settings/USB settings/USB selective suspend setting/Setting: Disabled => no such options on crow
+	- Disable "Antimalware Service Executable" to prevent high CPU usage: 
+		> search and run gpedit.msc > Computer Configuration > Administrative Templates > Windows Components > Microsoft Defender Antivirus 
+			> "Turn off Microsoft Defender Antivirus" from "Not configured" to "Enabled"
+			> "Allow antimalware service to remain running always" from "Not configured" to "Enabled" (Disabled?)
+			> Real-time Protection
+				> "Turn off real-time protection from "Not configured" to "Enabled"
+		> regedit > HKEY_LOCAL_MACHINE > SOFTWARE > Policies > Microsoft > Windows Defender > right click > New > DWORD (32-bit) Value > name: DisableAntiSpyware value: 1
+		> services.msc > Windows Defender Antivirus > ...[doesn't have this anymore]
+		> Task Scheduler > Task Scheduler Library > Microsoft > Windows > Windows Defender > Set all 4 tasks from Ready to disabled
+		
+
+o i Notepad++
 	o Obsidian theme
-	- Settings/Preferences.../Auto-completion/[untick all checkboxes]
-	- Settings/General Tab-bar/Multi-line/[Check]
+	o Settings/Preferences.../Auto-completion/[untick all checkboxes]
+	o Settings/General Tab-bar/Multi-line/[Check]
 	o Pin to taskbar
-	~ Plugins/Plugin admin... -> install LuaScript -> Plugins/LuaScript/Show console -> (in console) editor.MarginLeft = 10
+	x Plugins/Plugin admin... -> install LuaScript -> Plugins/LuaScript/Show console -> (in console) editor.MarginLeft = 10
 o i WinRAR
 o i DEAMON Tools Lite
 o i git
@@ -100,66 +105,61 @@ o i qBittorrent
 o i Total Commander
 o i USBView
 	- Unselect checkboxes in installer except: Debugging Tools for Windows > Install > run the exe in C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\USBView.exe
-- i OBS Studio
-	- Settings/Output/[set Recording from NVENC to software]
-	- Settings/Output/[set Streaming from NVENC to software]
-	- Add display capture
-	- Mute microphone
+o i OBS Studio
+	o Settings/Output/[set Recording from NVENC to software]
+	o Settings/Output/[set Streaming from NVENC to software]
+	o Add display capture
 - i Visual Studio
-	- Options/Projects and Solutions/General/Track Active Item in Solution Explorer = true
-	- Add or Remove Buttons... (Top toolbar far right down arrow)/Commands/Add Command.../Edit/Toggle Word Wrap -> OK and place somewhere
+	o Options/Projects and Solutions/General/Track Active Item in Solution Explorer = true
+	o Add or Remove Buttons... (Top toolbar far right down arrow)/Customize/Commands/Add Command.../Edit/Toggle Word Wrap -> OK and place somewhere
 	- Cog icon next to opened files tabs/Options/Pinned tabs/Show pinned tabs in a separate row = true
-- i Visual Studio Code
-- i Microsoft SQL Server Management Studio
-- i Microsoft Office Professional Plus 2010
-- i Docker, Docker Desktop
-- i EOS 80D softwares
-	- Digital Photo Professional 4
-	- EOS Utility
-	- Picture Style Editor
-- i Canon/Digital Photo Professional 4
-- i Adobe Photoshop CC 2019
-- i Adobe InDesign CC 2019
-- i Adobe Lightroom Classic CC
-- i Adobe After Effects CC 2015
-- i Adobe Premiere Pro CC 2015
-- i MuseScore 3
-- i PuTTY
-- i Tablet driver (?)
-- i Unity Hub
-- i Unity
-- i Media Player Classic (MPC-HC x64)
-- i VLC player
+o i Visual Studio Code
+o i Microsoft SQL Server Management Studio
+o i Microsoft Office Professional Plus 2010
+o i Docker/Docker Desktop
+o i Canon EOS 80D Utility bundle
+o i Adobe Photoshop CC 2019
+o i Adobe InDesign CC 2019
+o i Adobe Lightroom Classic CC
+o i Adobe After Effects CC 2015
+x i Adobe Premiere Pro CC 2015 > AMD Graphics are not supported.
+	- regedit > HKEY_LOCAL_MACHINE > SOFTWARE > Khronos > OpenCL > Vendors > double click on IntelOpenCL64.dll, change value from 0 to 1
+o i MuseScore 4
+o i PuTTY
+o i Unity Hub
+o i Unity
+o i Media Player Classic (MPC-HC x64)
+o i VLC player
 o i Mozilla Firefox
-- i Source Tree
-- i Java SDK/JDK
-- i NetBeans
-- i Xampp
-- i VMware Workstation 15 Player
-- i Audacity
+o i Source Tree
+o i Java SDK/JDK
+o i NetBeans
+o i Xampp
+o i VMware Workstation 15 Player
+o i Audacity
 - i EPSON Software (printer driver (?))
-- i OpenOffice 4
-- i Guitar Pro 7
-- i OpenHardwareMonitor
-- i Discord
-- i Aseprite
+o i OpenOffice 4
+o i Guitar Pro 7
+o i Discord
+o i Aseprite
+o i Microsoft Teams
 - i Tablet driver (?)
-- Windows
-	- Uncheck unwanted apps at startup (Task Manager/Startup)
+- i OpenHardwareMonitor
+o Windows
+	o Uncheck unwanted apps at startup (Task Manager/Startup)
 
 
 Optional:
 ---------
-- Skype
-- TeamViewer
+o Skype
+o TeamViewer
 - Calibre - E-book management
-- GeForce Experience
-- Zoom
+x Zoom	
 
 
 Maybe:
-(software i don't really use, but may be useful to know about)
 ------
+Software i don't really use, but may be useful to know about.
 - Melodics
 - LogMeIn Hamachi
 - GraphicsGale
@@ -167,59 +167,42 @@ Maybe:
 - BL2SaveEditor
 - Toontrack solo
 - Superior Drummer 2
-- InstantEyedropper
+x InstantEyedropper
 - LINQPad 5 (or newer)
 - EasyBCD (for bootable pendrives for OS installs)
 - Windows Grep
 - WinSCP (Total commander like)
-- Windows
-	- Disable "Antimalware Service Executable" to prevent high CPU usage: search and run gpedit.msc > Computer Configuration > Administrative Templates > Windows Components > Microsoft Defender Antivirus 
-		> "Turn off Microsoft Defender Antivirus" from "Not configured" to "Enabled"
-		> "Allow antimalware service to remain running always" from "Not configured" to "Enabled"
 
 
 Fun:
 ----
 - Cheat Engine 7.1
 - EA Desktop
-- Steam
+o Steam
 
 
-Folder structure:
------------------
-One drive structure:
+Starter folder structure:
+-------------------------
+Most of the data should be on Github or the Cloud storage but you can have some local folders like so:
+	- Documents\NextCloud
 	- Documents\CodeProjects
 	- Documents\CodeProjects\untracked
 	- Documents\Projects
-	- Documents\Quill (old LiteratureWork/Ego)
-	- Documents\Workshop
-	- Documents\Studio
-	- Documents\Print
-	- Documents\AllDocs
-	- Documents\GameMiscs
-	- Documents\EgoDoc
-	- Documents\Forrai
-	- Documents\Obudai
-	- Documents\Music
-	- Documents\Pictures
-	- Documents\Work
-	- Documents\MySQLDatabases
-Two drive structure:
-	... storage and system drive ...
+	- Users\crow\Pictures
+	- Users\crow\Music
 
 
 Taskbar pinned app order
 ------------------------
-- Task Manager
-- Notepad++
-- Chrome
-- Files
-- Paint
-- Visual Studio
-- Visual Studio Code
-- Command Prompt
-- Paint
-- Guitar Pro
+Task Manager
+Notepad++
+Files
+Chrome
+Paint
+Visual Studio
+Command Prompt
+Visual Studio Code
+Guitar Pro
 
 
 Useful:
@@ -245,3 +228,18 @@ When it doesn't, you need to dig deeper.
 Best of luck !
 
 P.S. Make sure to check the "Allow Power Down" status of the hubs after every Microsoft Windows update because Windows seems to like to reset this parameter.
+
+
+Legend:
+-------
+-: to do
+~: not a must
+o: done
+x: not doing it
+
+d: download
+t: torrent
+i: install
+
+- i: something to install, not yet done (todo).
+o d: something to download, done, downloaded.
